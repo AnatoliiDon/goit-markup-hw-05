@@ -679,6 +679,10 @@ body {
 .modal-input-container-data {
   position: relative;
 }
+
+.modal-input-container {
+  margin-bottom: 16px;
+}
 .modal-input-label {
   font-weight: 400;
   font-size: 12px;
@@ -706,6 +710,8 @@ body {
   resize: none;
   min-width: 360px;
   height: 120px;
+  color: rgba(46, 47, 66, 0.4);
+  padding: 8px 16px;
 }
 
 .modal-input-comment::placeholder {
@@ -748,18 +754,17 @@ body {
 
 .policy-wrapper {
   margin-bottom: 24px;
-  margin-left: 24px;
 }
 
 .rewiev-form-checkbox:checked + .policy-label-text .rewiev-form-own-checkbox {
   background-color: #404bbf;
-  border-color: #404bbf;
+  border-color: none;
   fill: #f4f4fd;
 }
 
-.rewiev-form-checkbox:focus + .policy-label-text .rewiev-form-own-checkbox {
+/* .rewiev-form-checkbox:focus + .policy-label-text .rewiev-form-own-checkbox {
   outline: 1px solid #4d5ae5;
-}
+} */
 
 .rewiev-form-own-checkbox {
   display: inline-flex;
@@ -772,12 +777,15 @@ body {
   justify-content: center;
   align-items: center;
   fill: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .send-button {
   border-radius: 4px;
   padding: 16px 32px;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
