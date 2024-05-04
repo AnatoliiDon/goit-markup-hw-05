@@ -684,6 +684,7 @@ body {
   margin-bottom: 16px;
 }
 .modal-input-label {
+  display: block;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -758,7 +759,7 @@ body {
 
 .rewiev-form-checkbox:checked + .policy-label-text .rewiev-form-own-checkbox {
   background-color: #404bbf;
-  border-color: none;
+  border: none;
   fill: #f4f4fd;
 }
 
