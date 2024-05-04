@@ -622,6 +622,10 @@ body {
   padding: 72px 24px 24px;
 }
 
+.modal-window-container {
+  margin-bottom: 8px;
+}
+
 .backdrop.is-open {
   opacity: 1;
   visibility: visible;
